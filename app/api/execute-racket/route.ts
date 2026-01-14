@@ -4,7 +4,8 @@ import { promisify } from 'util';
 import fs from 'fs/promises';
 import path from 'path';
 
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-static';
+export const revalidate = false;
 
 const execAsync = promisify(exec);
 
