@@ -1,0 +1,16 @@
+push (+ 1)
+push (reset)
+reset: (reset + 1)
+push (+ 10)
+push (shift k)
+shift: k (shift k + 10)
+push (k 100)
+call: k (value:100,marks:(shift k + 10))
+>(k 100)
+pop (shift k) => 100
+pop (+ 10) => 110
+<110
+pop (k 100) => 110
+pop (reset) => 110
+pop (+ 1) => 111
+111
