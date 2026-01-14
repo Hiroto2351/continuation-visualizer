@@ -4,6 +4,8 @@ import { promisify } from 'util';
 import fs from 'fs/promises';
 import path from 'path';
 
+export const dynamic = 'force-dynamic';
+
 const execAsync = promisify(exec);
 
 export async function GET() {
